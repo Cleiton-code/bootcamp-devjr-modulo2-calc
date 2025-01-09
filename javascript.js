@@ -12,5 +12,15 @@ function calc(op){
     }
 
     document.getElementById("output").value = output;
+
+    var newhistory = "<p>" + num1 + " " + op + " " + num2 + " = " +  output + "</p>";
+    var history = document.getElementById("history");
+
+
+    history.innerHTML = newhistory + history.innerHTML;
+
+    if(history.children.length > 10){
+        history.removeChild(history.childNodes[10]);
+    }
 }
 

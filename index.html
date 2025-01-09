@@ -10,7 +10,10 @@
 <body>
     <div class="container">
         <div class="calc">
-            <h1>Calculadora</h1>
+            <object data="calculate_black_48dp.svg" type="image/svg+xml"></object>
+            <div class="calc-title">
+                Calculadora
+            </div>
             <input id="num1" type="number" placeholder="Digite um número">
             <input id="num2" type="number" placeholder="Digite um número">
         <div class="botao">
@@ -21,9 +24,19 @@
         </div>
             <input id="output" type="text" readonly>
         </div>
+
         <div class="history">
+            <div class="title-history">
+                Histórico:
+            </div>
+            <div class="as10-operacoes">
+                <small>10 últimas operações:</small>
+                <div class="operacoes" id="history"></div>
+
+            </div>
 
         </div>
+        
  
     </div> 
 
